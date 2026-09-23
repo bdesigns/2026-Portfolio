@@ -1560,8 +1560,8 @@ video {
 }
 
 :root {
-    --color-primary: 5 150 105;
-    --color-primary-hover: 4 120 87;
+    --color-primary: 4 120 87;
+    --color-primary-hover: 3 99 72;
     --color-primary-light: 209 250 229;
     --color-bg: 249 250 251;
     --color-bg-alt: 255 255 255;
@@ -1581,6 +1581,8 @@ video {
 }
 
 .dark {
+    --color-primary: 5 150 105;
+    --color-primary-hover: 4 120 87;
     --color-bg: 15 23 42;
     --color-bg-alt: 30 41 59;
     --color-surface: 241 245 249;

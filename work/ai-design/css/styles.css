@@ -44,7 +44,7 @@
 
 body {
     margin: 0;
-    background: #080e1b;
+    background-color: #080e1b;
     color: var(--white);
     font-family: Inter, Arial, sans-serif;
 }
