@@ -1,0 +1,1017 @@
+/* Local fonts: no CDN or network connection is required. */
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/inter-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/inter-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('../assets/fonts/inter-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('../assets/fonts/jakarta-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+:root {
+    color-scheme: dark;
+    --navy: #0f1728;
+    --card: #1e293b;
+    --border: #334155;
+    --blue: #60a5fa;
+    --muted: #94a3b8;
+    --body: #cbd5e1;
+    --white: #f8fafc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #080e1b;
+    color: var(--white);
+    font-family: Inter, Arial, sans-serif;
+}
+
+.presentation {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 24px 12px;
+    gap: 14px;
+}
+
+.stage {
+    width: 100%;
+    max-width: 1600px;
+    position: relative;
+}
+
+.deck {
+    width: 1200px;
+    transform-origin: top left;
+}
+
+.slide {
+    width: 1200px;
+    height: 675px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #263144;
+    border-radius: 16px;
+    background: radial-gradient(ellipse 230px 260px at 90% 18%, #142342 0%, transparent 100%), var(--navy);
+}
+
+.slide[hidden] {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: -.025em;
+}
+
+p {
+    color: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.slide-title {
+    position: absolute;
+    left: 52px;
+    top: 43px;
+    font-size: 32px;
+    line-height: 40px;
+    padding-left: 21px;
+    letter-spacing: -.015em;
+}
+
+.slide-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    height: 26px;
+    width: 7px;
+    border-radius: 4px;
+    background: #3b82f6;
+}
+
+h3 {
+    font-size: 27px;
+    line-height: 1.25;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #3b82f6;
+    border-radius: 24px;
+    background: #17295a;
+    color: #93c5fd;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .7px;
+    font-weight: 600;
+    padding: 5px 13px;
+    white-space: nowrap;
+}
+
+.eyebrow img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.eyebrow.wide {
+    display: flex;
+    width: 100%;
+}
+
+.badges {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    padding: 8px 13px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.badge img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.card {
+    background: linear-gradient(110deg, #1e2a3b, #1d293a);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+.kicker {
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--blue);
+}
+
+.placeholder-image {
+    object-fit: fill;
+    border: 1px solid #465363;
+    border-radius: 14px;
+    box-shadow: 0 22px 30px #0003;
+}
+
+/* 01 — Cover */
+.cover-image {
+    position: absolute;
+    left: 2px;
+    top: 60px;
+    /* width: 474px; */
+    height: 610px;
+    /* border-radius: 20px; */
+}
+
+.cover-copy {
+    position: absolute;
+    left: 573px;
+    top: 149px;
+    width: 574px;
+}
+
+.cover-copy>.eyebrow {
+    padding-left: 20px;
+    padding-right: 13px;
+}
+
+h1 {
+    font-size: 53px;
+    line-height: 1.08;
+    margin: 16px 0 8px;
+    letter-spacing: -.02em;
+}
+
+.role {
+    font-family: Inter, Arial, sans-serif;
+    font-size: 21px;
+    line-height: 27px;
+    color: var(--blue);
+    letter-spacing: -.4px;
+}
+
+.cover-copy>p {
+    font-size: 17px;
+    line-height: 28.5px;
+    margin-top: 20px;
+}
+
+.cover-badges {
+    margin-top: 32px;
+    gap: 9px;
+}
+
+.cover-badges .badge {
+    height: 49px;
+    flex: 1;
+    white-space: normal;
+}
+
+.cover-badges .badge:nth-child(2) {
+    flex: 1.4;
+}
+
+/* 02 — Case study */
+.overview-card {
+    position: absolute;
+    left: 52px;
+    top: 109px;
+    width: 554px;
+    height: 524px;
+    padding: 34px 37px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: linear-gradient(125deg, #1e293b, #101827);
+}
+
+.overview-card h3 {
+    margin: 16px 0 15px;
+}
+
+.overview-card p+p {
+    margin-top: 19px;
+}
+
+.overview-card .badges {
+    position: absolute;
+    left: 37px;
+    bottom: 33px;
+}
+
+.overview-card .badge {
+    padding: 7px 12px;
+    font-size: 13px;
+}
+
+.phase-cards {
+    position: absolute;
+    left: 644px;
+    top: 140px;
+    width: 503px;
+    display: grid;
+    gap: 15px;
+}
+
+.phase-cards .card {
+    padding: 20px;
+}
+
+.phase-cards h3 {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 9px 0 8px;
+    letter-spacing: -.02em;
+}
+
+.phase-cards p {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--muted);
+}
+
+/* 03 — PRD */
+.architecture-copy {
+    position: absolute;
+    left: 52px;
+    top: 149px;
+    width: 483px;
+}
+
+.architecture-copy h3 {
+    font-size: 28px;
+    margin: 16px 0 20px;
+}
+
+.architecture-copy p {
+    line-height: 25.5px;
+}
+
+.checklist {
+    list-style: none;
+    margin: 21px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+    color: var(--body);
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.checklist li {
+    position: relative;
+    padding-left: 26px;
+}
+
+.checklist li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 15px;
+    height: 15px;
+    background: url('../assets/icons/check.png') center/contain no-repeat;
+}
+
+.architecture-image {
+    position: absolute;
+    left: 569px;
+    top: 137px;
+    width: 578px;
+    height: 468px;
+}
+
+/* Browser chrome is native CSS, separate from its replaceable screenshot. */
+.browser {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--card);
+    box-shadow: 0 18px 28px #0002;
+}
+
+.browser-bar {
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 15px;
+    background: #0e1727;
+}
+
+.traffic-lights {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.traffic-lights i {
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #ef4444;
+}
+
+.traffic-lights i:nth-child(2) {
+    background: #f59e0b;
+}
+
+.traffic-lights i:nth-child(3) {
+    background: #10b981;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+    height: 23px;
+    padding: 0 12px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background: var(--card);
+    color: var(--muted);
+    font: 11px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace;
+    white-space: nowrap;
+}
+
+.address img {
+    width: 10px;
+    height: 11px;
+    object-fit: contain;
+}
+
+.browser-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    min-height: 0;
+}
+
+.browser figcaption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--body);
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.status img {
+    width: 13px;
+    height: 13px;
+    object-fit: contain;
+    margin-right: 3px;
+}
+
+.green {
+    color: #10b981;
+}
+
+.amber {
+    color: #f59e0b;
+}
+
+/* 04 — Live app */
+.browser-pair {
+    position: absolute;
+    left: 52px;
+    right: 52px;
+    top: 109px;
+    height: 452px;
+    display: grid;
+    grid-template-columns: 588px 1fr;
+    gap: 26px;
+}
+
+.browser-pair .browser {
+    display: grid;
+    grid-template-rows: 42px 372px 36px;
+}
+
+.live-banner {
+    position: absolute;
+    left: 52px;
+    right: 52px;
+    top: 579px;
+    height: 59px;
+    border: 1px solid #3b82f6;
+    border-radius: 11px;
+    background: linear-gradient(100deg, #1e3a8a, #1d4ed8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.live-banner>span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.live-banner>span img {
+    width: 21px;
+    height: 21px;
+}
+
+.live-banner a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #1e3a8a;
+    background: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    text-decoration: none;
+    box-shadow: 0 5px 12px #0002;
+}
+
+.live-banner a img {
+    width: 13px;
+    height: 13px;
+}
+
+/* 05 + 06 — Shared workflow composition */
+.workflow-copy {
+    position: absolute;
+    left: 52px;
+    top: 109px;
+    width: 505px;
+}
+
+.workflow-copy>h3 {
+    margin: 16px 0 16px;
+}
+
+.workflow-copy>p {
+    line-height: 25.5px;
+}
+
+.detail-cards {
+    position: absolute;
+    top: 247px;
+    width: 100%;
+    display: grid;
+    gap: 13px;
+}
+
+.detail-cards .card {
+    height: 120px;
+    padding: 15px;
+}
+
+.detail-cards .kicker {
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: .8px;
+}
+
+.detail-cards h4 {
+    font-size: 15px;
+    line-height: 21px;
+    margin: 7px 0 6px;
+    letter-spacing: -.02em;
+}
+
+.detail-cards p {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--muted);
+}
+
+.workflow-copy>.badges {
+    position: absolute;
+    top: 521px;
+    left: 0;
+}
+
+.workflow-browser {
+    position: absolute;
+    left: 590px;
+    top: 152px;
+    width: 558px;
+    height: 470px;
+    display: grid;
+    grid-template-rows: 42px 1fr;
+}
+
+.workflow-browser .address {
+    font-size: 11px;
+    padding: 0 20px;
+    letter-spacing: -.2px;
+}
+
+.workspace-images {
+    position: absolute;
+    left: 590px;
+    top: 152px;
+    width: 558px;
+    display: grid;
+    gap: 15px;
+}
+
+.missing-image {
+    height: 227px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.missing-image figcaption {
+    padding: 12px 15px;
+    color: var(--body);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.missing-image>img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+/* 07 — Contact */
+.contact-pitch {
+    position: absolute;
+    left: 52px;
+    top: 199px;
+    width: 569px;
+    height: 343px;
+    border: 1px solid #3b82f6;
+    border-radius: 20px;
+    padding: 42px;
+    background: linear-gradient(125deg, #203c84, #1e293b);
+}
+
+.contact-pitch .eyebrow {
+    color: white;
+    background: #23438480;
+}
+
+.contact-pitch h3 {
+    font-size: 36px;
+    line-height: 43px;
+    margin: 17px 0 19px;
+    letter-spacing: -.025em;
+}
+
+.contact-pitch p {
+    font-size: 17px;
+    line-height: 28px;
+    color: #e2e8f0;
+}
+
+.contact-details {
+    position: absolute;
+    left: 653px;
+    top: 221px;
+    width: 495px;
+    display: grid;
+    gap: 16px;
+    font-style: normal;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    height: 89px;
+    padding: 21px 24px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.contact-icon {
+    display: grid;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #3b82f6;
+    border-radius: 12px;
+    background: #203969;
+    flex-shrink: 0;
+}
+
+.contact-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.contact-label {
+    display: block;
+    font-size: 11px;
+    letter-spacing: .6px;
+    color: var(--muted);
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.contact-card strong {
+    font-size: 17px;
+}
+
+/* Navigation stays outside the original slide canvas. */
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    height: 44px;
+    flex-shrink: 0;
+}
+
+.controls button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: #142035;
+    color: #e2e8f0;
+    padding: 10px 15px;
+    font: 600 13px Inter, Arial, sans-serif;
+    min-height: 44px;
+    cursor: pointer;
+    transition: background .15s;
+}
+
+.controls button:hover:not(:disabled) {
+    background: #24385a;
+}
+
+.controls button:disabled {
+    opacity: .35;
+    cursor: default;
+}
+
+.counter {
+    min-width: 48px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 4px;
+}
+
+.contact-card[href]:hover {
+    border-color: #60a5fa;
+}
+
+.no-script {
+    padding: 12px;
+}
+
+/* Without JS, retain all editable content in a scrollable document. */
+html:not(.js) .presentation {
+    align-items: flex-start;
+}
+
+html:not(.js) .slide[hidden] {
+    display: block;
+}
+
+html:not(.js) .slide {
+    margin-bottom: 20px;
+}
+
+html:not(.js) .controls {
+    display: none;
+}
+
+@media(max-width:800px) {
+    .presentation {
+        padding: 12px 10px;
+        gap: 12px;
+    }
+}
+
+@media(max-width:500px) {
+    .button-label {
+        display: none;
+    }
+
+    .controls button {
+        min-width: 48px;
+        justify-content: center;
+    }
+
+    .controls {
+        gap: 20px;
+    }
+}
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .presentation {
+        display: block;
+        padding: 0;
+    }
+
+    .stage {
+        height: auto !important;
+    }
+
+    .deck {
+        transform: none !important;
+    }
+
+    .slide,
+    .slide[hidden] {
+        display: block !important;
+        break-after: page;
+        page-break-after: always;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .controls {
+        display: none;
+    }
+
+    @page {
+        size: 12.5in 7.03125in;
+        margin: 0;
+    }
+}
+
+
+/* Transparent cover artwork retains the original image area. */
+.cover-artwork {
+    object-fit: contain;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Fill slide 3’s original image frame; trim side whitespace, preserve aspect ratio. */
+.prd-screenshot {
+    object-fit: cover;
+    object-position: 52% center;
+    background: #fff;
+}
+
+/* Slide 4 screenshots fill the browser frames without distortion. */
+.browser-pair .browser-image {
+    object-fit: cover;
+    object-position: center top;
+}
+
+/* 05 — Restored text treatment with generous two-column spacing. */
+.discovery-intro {
+    position: absolute;
+    left: 52px;
+    top: 153px;
+    width: 510px;
+}
+
+.discovery-intro h3 {
+    font-size: 34px;
+    line-height: 43px;
+    margin: 23px 0;
+}
+
+.discovery-intro p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.discovery-cards {
+    position: absolute;
+    left: 615px;
+    top: 150px;
+    width: 533px;
+    display: grid;
+    gap: 22px;
+}
+
+.discovery-cards .card {
+    padding: 27px;
+    min-height: 183px;
+}
+
+.discovery-cards .kicker {
+    font-size: 11px;
+}
+
+.discovery-cards h4 {
+    font-size: 22px;
+    line-height: 29px;
+    margin: 13px 0 12px;
+}
+
+.discovery-cards p {
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--muted);
+}
+
+.discovery-footer {
+    position: absolute;
+    left: 52px;
+    right: 52px;
+    bottom: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.discovery-footer>a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* 06 — Dedicated screenshot gallery and full-resolution launch buttons. */
+.gallery-images {
+    position: absolute;
+    left: 52px;
+    right: 52px;
+    top: 112px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.gallery-images figure>a {
+    display: flex;
+    height: 380px;
+    background: #252525;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.gallery-images img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gallery-images figcaption {
+    padding-top: 13px;
+}
+
+.gallery-images h3 {
+    font-size: 19px;
+    margin-top: 5px;
+}
+
+.gallery-images .kicker {
+    font-size: 10px;
+}
+
+.gallery-images a:hover {
+    border-color: var(--blue);
+}
+
+.gallery-launch {
+    top: 588px;
+}
+
+.gallery-launch>span {
+    font-size: 13px;
+}
+
+.gallery-launch>span img {
+    filter: brightness(0) invert(1);
+    width: 17px;
+    height: 17px;
+}
+
+.gallery-launch>div {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery-launch a {
+    font-size: 12px;
+    padding: 10px 12px;
+}

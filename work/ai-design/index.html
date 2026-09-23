@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Brad Earnhardt — Senior UI/UX Designer & Systems Engineer. AI-powered UX and product case studies.">
+    <meta name="theme-color" content="#0f1728">
+    <title>Brad Earnhardt | UI/UX & AI Case Studies</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/slideshow.js" defer></script>
+</head>
+
+<body>
+  <main class="presentation" aria-label="Brad Earnhardt portfolio presentation">
+    <div class="stage" id="stage">
+      <div class="deck" id="deck">
+
+        <!-- SLIDE 1: Transparent foreground artwork: assets/cover-network.png. -->
+        <section class="slide cover" id="slide-1" aria-labelledby="title-1">
+          <img class="cover-image cover-artwork" src="assets/cover-network.png"
+            alt="Blue abstract sphere with glowing cyan nodes and interconnected network lines">
+          <div class="cover-copy">
+            <div class="eyebrow">AI-POWERED UX &amp; PRODUCT CASE STUDIES</div>
+            <h1 id="title-1">BRAD<br>EARNHARDT</h1>
+            <h2 class="role">Senior UI/UX Designer &amp; Systems Engineer</h2>
+            <p>Transforming complex ideas into live, interactive web applications through AI workflows, MCP design systems, custom PRDs, and modern front-end engineering.</p>
+            <div class="badges cover-badges">
+              <span class="badge"><img src="assets/icons/brain.png" alt="">AI Agent<br>Workflows</span>
+              <span class="badge"><img src="assets/icons/plug.png" alt="">Penpot MCP Design<br>Systems</span>
+              <span class="badge"><img src="assets/icons/code.png" alt="">Next.js &amp;<br>Supabase</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 2 -->
+        <section class="slide case-study" id="slide-2" aria-labelledby="title-2" hidden>
+          <h2 class="slide-title" id="title-2">Case Study: MySongHeadache</h2>
+          <article class="overview-card">
+            <div class="eyebrow"><img src="assets/icons/rocket.png" alt="">CONCEPT TO PRODUCTION</div>
+            <h3>Building a Live Music Archival App with OpenAI GPT</h3>
+            <p><strong>MySongHeadache</strong> is a dedicated personal digital archive designed to capture
+              "earworms"—songs that won't leave your head. Built with a distinctive <strong>'70s Op Art</strong> visual aesthetic, curving interlocking color paths, and seamless YouTube integrations.</p><p>By leveraging OpenAI's ChatGPT Canvas mode, the entire product lifecycle—from drafting the Product Requirement Document (PRD) to iterative prompt-driven component generation—was executed in record time.
+            </p>
+            <div class="badges"><span class="badge"><img src="assets/icons/database.png" alt="">Supabase</span><span
+                class="badge"><img src="assets/icons/youtube.png" alt="">YouTube API v3</span><span class="badge"><img
+                  src="assets/icons/palette.png" alt="">Vanilla CSS 70s Op Art</span></div>
+          </article>
+          <div class="phase-cards">
+            <article class="card">
+              <div class="kicker">PHASE 01 — ARCHITECTURAL PRD</div>
+              <h3>AI-Driven Specification</h3>
+              <p>Drafted a comprehensive PRD using GPT-5.6 , specifying App Router architecture, and structured YouTube Data API hooks.</p>
+            </article>
+            <article class="card">
+              <div class="kicker">PHASE 02 — ITERATIVE CO-CODING</div>
+              <h3>Prompt-Driven Development</h3>
+              <p>Refined complex CSS clip-path curves and background geometric loops iteratively through targeted natural language agent instructions.</p>
+            </article>
+            <article class="card">
+              <div class="kicker">PHASE 03 — PRODUCTION DEPLOYMENT</div>
+              <h3>Interactive Live Web App</h3>
+              <p>Deploys a fully functional admin suite and public mixtape player with password protection, YouTube search, and real-time playback.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- SLIDE 3: Screenshot: assets/prd-workspace.png. -->
+        <section class="slide architecture" id="slide-3" aria-labelledby="title-3" hidden>
+          <h2 class="slide-title" id="title-3">Phase 01: PRD Architecture &amp; Prompting</h2>
+          <div class="architecture-copy">
+            <div class="eyebrow wide"><img src="assets/icons/terminal.png" alt="">HUMAN + AI COLLABORATION</div>
+            <h3>Precision Prompting with ChatGPT Canvas</h3>
+            <p>Instead of manual boilerplate setup, the project originated by feeding a structured prompt into OpenAI's GPT Canvas workspace to generate a single-source-of-truth PRD (Version 2.0).</p>
+            <ul class="checklist">
+              <li>Defined strict tech stack parameters: Next.js App Router, Supabase DB, Vanilla CSS Modules.</li>
+              <li>Specified 1970s Optical Art graphic design rules with SVG paths and clipping curves.</li>
+              <li>Created clear User Stories for search, embed, password verification, and timeless feed ordering.</li>
+            </ul>
+          </div>
+          <img class="architecture-image placeholder-image prd-screenshot" src="assets/prd-workspace.png" alt="MySongHeadache planning workspace showing the architectural PRD prompt and product summary">
+        </section>
+
+        <!-- SLIDE 4: Each browser frame is editable HTML. Replace the two images inside. -->
+        <section class="slide live-app" id="slide-4" aria-labelledby="title-4" hidden>
+          <h2 class="slide-title" id="title-4">Phase 02 &amp; 03: Live Interactive Application</h2>
+          <div class="browser-pair">
+            <figure class="browser">
+              <div class="browser-bar">
+                <span class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="address"><img src="assets/icons/lock.png" alt="">https://mysongheadache.com</span>
+              </div>
+              <img class="browser-image" src="assets/mixtape-homepage.png" alt="MySongHeadache homepage with retro stripes and the public mixtape archive">
+              <figcaption>
+                  <span>Public Mixtape Archive</span>
+                  <span class="status green">● Live Frontend</span>
+              </figcaption>
+            </figure>
+            <figure class="browser">
+            <div class="browser-bar">
+                <span class="traffic-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="address"><img src="assets/icons/lock.png" alt="">https://mysongheadache.com/admin</span>
+            </div>
+              <img class="browser-image" src="assets/mixtape-admin.png" alt="MySongHeadache admin interface with song search and add-to-mixtape form">
+              <figcaption>
+                <span>Behind the Mixtape Admin UI</span>
+                <span class="status amber"><img src="assets/icons/key.png" alt="">YouTube API Search</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="live-banner"><span><img src="assets/icons/globe.png" alt="">Experience the interactive application live on the web:</span><a href="https://bit.ly/mysongheadache" target="_blank" rel="noopener noreferrer">bit.ly/mysongheadache<img src="assets/icons/external.png" alt=" (opens in a new tab)"></a></div>
+        </section>
+
+        <!-- SLIDE 5: Original text and card styling, expanded into a text-led layout. -->
+        <section class="slide discovery" id="slide-5" aria-labelledby="title-5" hidden>
+          <h2 class="slide-title" id="title-5">Cross-Industry AI Versatility</h2>
+          <div class="discovery-intro">
+            <div class="eyebrow"><img src="assets/icons/wand.png" alt="">RAPID CLIENT MOCKUPS &amp; DISCOVERY</div>
+            <h3>Accelerating Client Discovery<br>via Figma Make</h3>
+            <p>To kickstart client conversations and align stakeholder vision instantly, I utilize <strong>Figma Make</strong> and custom LLM prompts to rapidly translate vague client requirements into full design systems and responsive landing page mockups in under 3 minutes.</p>
+          </div>
+          <div class="discovery-cards">
+            <article class="card">
+              <div class="kicker">BROAD PRODUCT ADAPTABILITY</div>
+              <h4>EcoPest Control Case Mockup</h4>
+              <p>Demonstrating design agility across completely different verticals—from retro music archives to clean, trustworthy eco-friendly service platforms.</p>
+            </article>
+            <article class="card">
+              <div class="kicker">AUTOMATED STYLE GUIDE &amp; COMPONENTS</div>
+              <h4>Instant Token &amp; Typography Specs</h4>
+              <p>Generates Deep Pine Green (#1A4331), Soft Sage (#A8C3B3), Warm Terracotta (#E07A5F), pill buttons, and card specs automatically</p>
+            </article>
+          </div>
+          <div class="discovery-footer">
+            <div class="badges"><span class="badge"><img src="assets/icons/figma.png" alt="">Figma Make</span><span
+                class="badge"><img src="assets/icons/bolt.png" alt="">2m 38s Build</span><span class="badge"><img
+                  src="assets/icons/chat.png" alt="">Fast Feedback</span></div><a href="#slide-6">View the mockup &amp; style guide →</a>
+          </div>
+        </section>
+
+        <!-- SLIDE 6: Full-size screenshots open in a new tab. -->
+        <section class="slide ecopest-gallery" id="slide-6" aria-labelledby="title-6" hidden>
+          <h2 class="slide-title" id="title-6">EcoPest Control: Mockup &amp; Style Guide</h2>
+          <div class="gallery-images">
+            <figure><a href="assets/ecopest-landing.png" target="_blank" rel="noopener noreferrer"
+                aria-label="Open full-size landing page screenshot in a new tab"><img src="assets/ecopest-landing.png"
+                  alt="EcoPest Control landing page and Figma Make prompt"></a>
+              <figcaption><span class="kicker">01 — CLIENT MOCKUP</span>
+                <h3>EcoPest Control Landing Page</h3>
+              </figcaption>
+            </figure>
+            <figure><a href="assets/ecopest-style-guide.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size style guide screenshot in a new tab"><img src="assets/ecopest-style-guide.png" alt="EcoPest Control style guide showing colors, typography, buttons, and cards"></a>
+              <figcaption><span class="kicker">02 — DESIGN SYSTEM</span>
+                <h3>Generated Style Guide &amp; Components</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="live-banner gallery-launch">
+            <span><img src="assets/icons/external.png" alt="">Explore the details — click to open a full-size image:</span><div><a href="assets/ecopest-landing.png" target="_blank" rel="noopener noreferrer">Launch Landing Page ↗</a><a href="assets/ecopest-style-guide.png" target="_blank" rel="noopener noreferrer">Launch Style Guide ↗</a></div>
+          </div>
+        </section>
+
+        <!-- SLIDE 7: Text-led MCP workflow; screenshots follow on slide 8. -->
+        <section class="slide discovery automation" id="slide-7" aria-labelledby="title-7" hidden>
+          <h2 class="slide-title" id="title-7">Penpot MCP &amp; Codex Automation</h2>
+          <div class="discovery-intro">
+            <div class="eyebrow"><img src="assets/icons/layers.png" alt="">IMAGE-TO-DESIGN SYSTEM WORKFLOW</div>
+            <h3>From Single Image UI to Full Penpot Style Guide</h3>
+            <p>Connected <strong>Codex</strong> directly with the <strong>Penpot MCP (Model Context Protocol)</strong>, providing a single UI image and automatically extracting design tokens, component hierarchies, and a reusable style library.</p>
+          </div>
+          <div class="discovery-cards">
+            <article class="card">
+              <div class="kicker">01 — SINGLE IMAGE PROMPTING</div>
+              <h4>Vision-Based Spec Extraction</h4>
+              <p>Codex analyzes the provided UI screenshot, detecting typography scales, color palettes, spacing rhythm, and button styles.</p>
+            </article>
+            <article class="card">
+              <div class="kicker">02 — MCP ASSET GENERATION</div>
+              <h4>Scalable Component &amp; Style Library</h4>
+              <p>Constructs native Penpot design tokens and master components directly in the canvas, enabling rapid expansion for future mockups.</p>
+            </article>
+          </div>
+          <div class="discovery-footer">
+            <div class="badges"><span class="badge"><img src="assets/icons/penpot.png" alt="">Penpot MCP</span><span
+                class="badge"><img src="assets/icons/codex.png" alt="">OpenAI Codex</span><span class="badge"><img
+                  src="assets/icons/style-guide.png" alt="">Style Guide</span></div><a href="#slide-8">View the MCP build &amp; design system →</a>
+          </div>
+        </section>
+
+        <!-- SLIDE 8: Original screenshots with full-resolution launch links. -->
+        <section class="slide penpot-gallery" id="slide-8" aria-labelledby="title-8" hidden>
+          <h2 class="slide-title" id="title-8">Penpot MCP: Build Process &amp; Design System</h2>
+          <div class="gallery-images">
+            <figure><a href="assets/penpot-mcp-build.png" target="_blank" rel="noopener noreferrer"
+                aria-label="Open full-size MCP build screenshot in a new tab"><img src="assets/penpot-mcp-build.png"
+                  alt="AI-assisted MCP project build alongside a clinical monitor reference in Penpot"></a>
+              <figcaption><span class="kicker">01 — AI + MCP BUILD PROCESS</span>
+                <h3>Codex &amp; Penpot MCP Workspace</h3>
+              </figcaption>
+            </figure>
+            <figure><a href="assets/penpot-design-system.png" target="_blank" rel="noopener noreferrer"
+                aria-label="Open full-size Penpot design system screenshot in a new tab"><img src="assets/penpot-design-system.png" alt="Penpot desktop workspace with clinical monitor components, design tokens, and a complete style guide"></a>
+              <figcaption>
+                <span class="kicker">02 — COMPONENTS &amp; STYLE GUIDE</span>
+                <h3>Penpot Design System &amp; Component Library</h3>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="live-banner gallery-launch">
+            <span><img src="assets/icons/external.png" alt="">Explore the details — click to open a full-size image:</span>
+            <div>
+                <a href="assets/penpot-mcp-build.png" target="_blank" rel="noopener noreferrer">Launch MCP Build ↗</a>
+                <a href="assets/penpot-design-system.png" target="_blank" rel="noopener noreferrer">Launch Penpot System ↗</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- SLIDE 9 -->
+        <section class="slide contact" id="slide-9" aria-labelledby="title-9" hidden>
+          <h2 class="slide-title" id="title-9">Let's Build What's Next</h2>
+          <article class="contact-pitch">
+            <div class="eyebrow"><img src="assets/icons/handshake.png" alt="">RAPID PROTOTYPING PARTNER</div>
+            <h3>Ready to turn your product vision into reality?</h3>
+            <p>Combining 20+ years of UX design leadership with modern AI prompt engineering (Claude/Code, ChatGPT/Codex, Penpot MCP, Figma Make, Supabase) to build high-impact, accessible software.</p>
+          </article>
+          <address class="contact-details">
+            <a class="contact-card" href="mailto:uxbrad@bdesigns.net">
+                <span class="contact-icon">
+                    <img src="assets/icons/email.png" alt="email icon">
+                </span>
+                <span>
+                    <span class="contact-label">EMAIL ADDRESS</span>
+                    <strong>uxbrad@bdesigns.net</strong>
+                </span>
+            </a>
+            <a class="contact-card" href="tel:+17043236921">
+                <span class="contact-icon">
+                    <img src="assets/icons/phone.png" alt="phone icon">
+                </span>
+                <span>
+                    <span class="contact-label">PHONE NUMBER</span>
+                    <strong>704-323-6921</strong>
+                </span>
+            </a>
+            <div class="contact-card">
+                <span class="contact-icon">
+                    <img src="assets/icons/location.png" alt="location icon">
+                </span>
+                <span>
+                    <span class="contact-label">LOCATION</span>
+                    <strong>Charlotte, NC</strong>
+              </span>
+            </div>
+          </address>
+        </section>
+
+      </div>
+    </div>
+    <nav class="controls" aria-label="Slideshow controls">
+      <button id="previous" type="button" aria-label="Previous slide" disabled><span aria-hidden="true">←</span><span class="button-label">Previous</span></button>
+      <span id="counter" class="counter" aria-live="polite" aria-atomic="true">1 / 9</span>
+      <button id="next" type="button" aria-label="Next slide"><span class="button-label">Next</span><span aria-hidden="true">→</span></button>
+    </nav>
+    <noscript>
+      <p class="no-script">JavaScript is disabled. All nine slides are shown below; scroll to view them.</p>
+    </noscript>
+  </main>
+</body>
+
+</html>
