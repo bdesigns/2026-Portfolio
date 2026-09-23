@@ -47,4 +47,4 @@ next-env.d.ts
 edits.json
 MISSING-ASSETS.md
 PROJECT-NOTES.md
-.vscode
+/.vscode
