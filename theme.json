@@ -1,0 +1,7 @@
+{
+  "mode": "light",
+  "colors": {
+    "--color-text-muted--dark": "174 191 213",
+    "--color-text-muted": "106 120 138"
+  }
+}

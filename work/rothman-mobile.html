@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Explore the research, design process, and outcomes of the Rothman mobile project.">
+	<meta name="keywords" content="UI/UX designer, senior designer, Charlotte NC, user experience, interface design, front-end developer, Figma, Adobe XD, React, Angular, accessible design, WCAG">
+	<meta name="author" content="Brad Earnhardt">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://bradearnhardt.com/work/rothman-mobile.html">
+	<meta property="og:title" content="Rothman Mobile Case Study | Brad Earnhardt">
+	<meta property="og:description" content="Explore the research, design process, and outcomes of the Rothman mobile project.">
+	<meta property="og:site_name" content="Brad Earnhardt Portfolio">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:image" content="https://bradearnhardt.com/images/images-brad-hero.png">
+
+	<link rel="canonical" href="https://bradearnhardt.com/work/rothman-mobile.html">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;family=Urbanist:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+	<title>Rothman Mobile Case Study | Brad Earnhardt</title>
+
+	<link rel="stylesheet" crossorigin="" href="../assets/styles.css">
+	<style>
+		/* Custom color overrides (light) */
+		:root {
+			--color-text-muted: 106 120 138;
+		}
+
+		/* Custom color overrides (dark) */
+		.dark {
+			--color-text-muted: 174 191 213;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="root">
+		<header class="fixed left-0 right-0 z-30 transition-all duration-300 bg-transparent py-5">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex items-center justify-between"><a class="flex items-center gap-1 font-heading text-2xl font-bold" href="../index.html"><span class="text-txt transition-[outline]">Brad</span><span	class="text-primary transition-[outline]">Earnhardt</span></a><nav class="hidden md:flex items-center gap-1 lg:gap-2"><a class="px-3 py-2 text-sm font-medium transition-colors font-body text-txt-muted hover:text-primary" href="../index.html"><span class="transition-[outline]">Home</span></a><a class="px-3 py-2 text-sm font-medium transition-colors font-body text-txt-muted hover:text-primary" href="../work.html"><span class="transition-[outline]">Work</span></a><a class="px-3 py-2 text-sm font-medium transition-colors font-body text-txt-muted hover:text-primary" href="../process.html"><span class="transition-[outline]">Process</span></a><a class="px-3 py-2 text-sm font-medium transition-colors font-body text-txt-muted hover:text-primary" href="../about.html"><span class="transition-[outline]">About</span></a><a class="px-3 py-2 text-sm font-medium transition-colors font-body text-txt-muted hover:text-primary" href="../contact.html"><span class="transition-[outline]">Contact</span></a></nav><a class="hidden md:inline-flex btn-primary text-sm" href="../contact.html"><span class="transition-[outline]">Get In Touch</span></a><button class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu" aria-expanded="false"><span class="block w-6 h-0.5 bg-txt transition-all "></span><span class="block w-6 h-0.5 bg-txt transition-all "></span><span class="block w-6 h-0.5 bg-txt transition-all "></span></button></div>
+			</div>
+		</header>
+		<div class="mobile-menu-overlay "></div>
+		<div class="mobile-menu-drawer " role="dialog" aria-label="Mobile navigation">
+			<div class="flex justify-between items-center mb-8"><span class="font-heading text-xl font-bold"><span
+						class="text-txt">Brad</span><span class="text-primary">Earnhardt</span></span><button
+					class="text-2xl text-txt-muted" aria-label="Close menu">×</button></div>
+			<nav class="flex flex-col gap-2"><a
+					class="block px-4 py-3 text-base font-medium rounded transition-colors font-body text-txt-muted hover:text-primary hover:bg-primary/5"
+					href="../index.html">Home</a><a
+					class="block px-4 py-3 text-base font-medium rounded transition-colors font-body text-txt-muted hover:text-primary hover:bg-primary/5"
+					href="../work.html">Work</a><a
+					class="block px-4 py-3 text-base font-medium rounded transition-colors font-body text-txt-muted hover:text-primary hover:bg-primary/5"
+					href="../process.html">Process</a><a
+					class="block px-4 py-3 text-base font-medium rounded transition-colors font-body text-txt-muted hover:text-primary hover:bg-primary/5"
+					href="../about.html">About</a><a
+					class="block px-4 py-3 text-base font-medium rounded transition-colors font-body text-txt-muted hover:text-primary hover:bg-primary/5"
+					href="../contact.html">Contact</a><a class="mt-4 btn-primary text-center justify-center"
+					href="../contact.html">Get In Touch</a></nav>
+		</div>
+		<main class="min-h-screen">
+			<article class="min-h-screen pt-24 pb-20">
+				<div class="bg-surface text-txt-inverse">
+					<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24"><a
+							class="inline-flex items-center gap-2 text-sm text-txt-inverse/70 hover:text-txt-inverse font-body mb-8 transition-colors"
+							href="../work.html"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+								stroke-width="2">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+							</svg>Back to Work</a>
+						<p class="text-sm font-medium text-primary uppercase tracking-wider mb-3 font-body transition-[outline]">
+							Healthcare / Mobile</p>
+						<h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4 transition-[outline]">
+							Rothman Index Mobile App</h1>
+						<p class="text-lg text-txt-inverse/80 font-body max-w-2xl mb-8 transition-[outline]">Real time
+							patient acuity monitoring for clinical teams on the go</p>
+						<div class="flex flex-wrap gap-6 text-sm text-txt-inverse/70 font-body">
+							<div><span class="text-txt-inverse font-medium">Role:</span> <span class="transition-[outline]">Senior UI/UX Engineer</span></div>
+                            <div><span class="text-txt-inverse font-medium">Company:</span><span
+									class="transition-[outline]">PeraHealth</span></div>
+							<div><span class="text-txt-inverse font-medium">Timeline:</span><span class="transition-[outline]">2019 &dash;
+									2022</span></div>
+						</div>
+						<div class="flex flex-wrap gap-2 mt-6"><span
+								class="px-3 py-1 text-xs font-medium bg-white/10 rounded-full"><span class="transition-[outline]">Adobe
+									XD</span></span><span class="px-3 py-1 text-xs font-medium bg-white/10 rounded-full"><span
+									class="transition-[outline]">Prototypes</span></span><span
+								class="px-3 py-1 text-xs font-medium bg-white/10 rounded-full"><span
+									class="transition-[outline]">Angular</span></span><span
+								class="px-3 py-1 text-xs font-medium bg-white/10 rounded-full"><span class="transition-[outline]">WCAG
+									2.1</span></span></div>
+					</div>
+				</div>
+				<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8">
+					<div class="rounded-lg overflow-hidden shadow-xl border border-border">
+						<div class="aspect-[16/9] bg-surface/5"><img src="../images/ri-mobile-w-1200-h-675-fit-crop.png"
+								alt="Rothman Index Mobile App — hero" class="w-full h-full object-cover" loading="eager"></div>
+					</div>
+				</div>
+				<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+					<section class="mb-14">
+						<h2 class="font-heading text-2xl font-bold text-txt mb-4">The Problem</h2>
+						<div class="section-divider mb-6"></div>
+						<p class="text-txt-muted font-body leading-relaxed text-lg transition-[outline]">Clinical staff	needed real time patient acuity data at the bedside, but the existing desktop only Rothman Index dashboard was impractical for nurses moving between rooms. Delayed access to deterioration alerts put patient safety at risk.</p>
+					</section>
+					<section class="mb-14">
+						<h3 class="font-heading text-xl font-semibold text-txt mb-4">Constraints</h3>
+						<ul class="space-y-2">
+							<li class="flex items-start gap-3 text-txt-muted font-body"><span
+									class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span><span
+									class="transition-[outline]">FDA 508 clearance requirements — strict regulatory
+									review process</span></li>
+							<li class="flex items-start gap-3 text-txt-muted font-body"><span
+									class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span><span
+									class="transition-[outline]">WCAG 2.1 AA accessibility compliance for clinical
+									environments and clearance approval.</span></li>
+							<li class="flex items-start gap-3 text-txt-muted font-body"><span
+									class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span><span
+									class="transition-[outline]">Must work on both iOS and Android with intermittent
+									hospital Wi-Fi</span></li>
+							<li class="flex items-start gap-3 text-txt-muted font-body"><span
+									class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span><span
+									class="transition-[outline]">Integration with existing HL7/FHIR data
+									pipelines</span></li>
+							<li class="flex items-start gap-3 text-txt-muted font-body"><span
+									class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span><span
+									class="transition-[outline]">Nurses have seconds, not minutes, to interpret patient
+									status</span></li>
+						</ul>
+					</section>
+					<section class="mb-14">
+						<h2 class="font-heading text-2xl font-bold text-txt mb-4">Research</h2>
+						<div class="section-divider mb-6"></div>
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+							<div>
+								<h4 class="font-heading text-lg font-semibold text-txt mb-3">Methods</h4>
+								<ul class="space-y-2">
+									<li class="flex items-start gap-3 text-txt-muted font-body text-sm"><span
+											class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span><span
+											class="transition-[outline]">Reviewed charge nurses and hospitalists reports
+											and feedback on alert fatigue</span></li>
+									<li class="flex items-start gap-3 text-txt-muted font-body text-sm"><span
+											class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span><span
+											class="transition-[outline]">Analyzed usage logs from existing desktop
+											dashboard</span></li>
+									<li class="flex items-start gap-3 text-txt-muted font-body text-sm"><span
+											class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span><span
+											class="transition-[outline]">Worked with former rapid response team nurses
+											to record clinical patient workflows to streamline application
+											visuals</span></li>
+								</ul>
+							</div>
+							<div>
+								<h4 class="font-heading text-lg font-semibold text-txt mb-3">Key Insights</h4>
+								<ul class="space-y-2">
+									<li class="flex items-start gap-3 text-txt-muted font-body text-sm">
+                                        <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                        <span class="transition-[outline]">Nurses check patient status at glances between other tasks</span></li>
+									<li class="flex items-start gap-3 text-txt-muted font-body text-sm">
+                                        <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                        <span class="transition-[outline]">Color coded severity is the fastest signal for reporting not just numbers alone</span></li>
+									<li class="flex items-start gap-3 text-txt-muted font-body text-sm">
+                                        <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                        <span class="transition-[outline]">Alert fatigue from hospital systems has caused real alerts to be ignored</span></li>
+									<li class="flex items-start gap-3 text-txt-muted font-body text-sm">
+                                        <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span>
+                                        <span class="transition-[outline]">Charge nurses need unit level views; bedside nurses need patient level views, and rapid response nurse need full hospital views.</span>
+                                    </li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<section class="mb-14 gallery-section">
+						<h2 class="font-heading text-2xl font-bold text-txt mb-4">Process</h2>
+						<div class="section-divider mb-6"></div>
+						<div class="mb-10">
+							<h4 class="font-heading text-lg font-semibold text-txt mb-4">User Flows</h4>
+							<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+								<figure class="bg-bg rounded-lg overflow-hidden border border-border">
+									<div class="aspect-[16/10] bg-surface/5"><img
+											src="../images/photo-1512758017271-d7b84c2113f1-w-800-h-500-fit-crop.jpg"
+											alt="Task flow: nurse receives alert → opens app → triages patient"
+											class="w-full h-full object-cover" loading="lazy"></div>
+									<figcaption class="px-4 py-3 text-sm text-txt-muted font-body">
+                                        <span class="transition-[outline]">Task flow: nurse receives alert → opens app → triages patient → records actions taken</span>
+                                    </figcaption>
+								</figure>
+								<figure class="bg-bg rounded-lg overflow-hidden border border-border">
+									<div class="aspect-[16/10] bg-surface/5"><img
+											src="../images/photo-1454165804606-c3d57bc86b40-w-800-h-500-fit-crop.jpg"
+											alt="Information architecture: unit view → patient list → patient detail"
+											class="w-full h-full object-cover" loading="lazy">
+                                    </div>
+									<figcaption class="px-4 py-3 text-sm text-txt-muted font-body">
+                                        <span class="transition-[outline]">Information architecture: hospital view → unitview → patient list → patient detail</span>
+                                    </figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="mb-10">
+							<h4 class="font-heading text-lg font-semibold text-txt mb-4">Wireframes</h4>
+							<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+								<figure class="bg-bg rounded-lg overflow-hidden border border-border">
+									<div class="show-large aspect-[16/10] bg-surface/5"><img src="../images/patient-card-history@2x.webp"
+											data-missing-src="../images/patient-card-history.png"
+											alt="Image pending: Low-fi wireframe: patient list with color-coded acuity bands"
+											class="w-full h-full object-cover" loading="lazy"></div>
+									<figcaption class="px-4 py-3 text-sm text-txt-muted font-body"><span
+											class="transition-[outline]">Lo-fi reworked wireframe: patient list with color-coded acuity bands</span></figcaption>
+								</figure>
+								<figure class="bg-bg rounded-lg overflow-hidden border border-border">
+									<div class="show-large aspect-[16/10] bg-surface/5"><img src="../images/patient-detail-rework.webp"
+											data-missing-src="../images/patient-detail-rework.webp"
+											alt="Image pending: Low-fi wireframe: patient detail with trend graph"
+											class="w-full h-full object-cover" loading="lazy"></div>
+									<figcaption class="px-4 py-3 text-sm text-txt-muted font-body"><span
+											class="transition-[outline]">Lo-fi wireframe: patient details with mirroring desktop application information</span></figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="mb-10">
+							<h4 class="font-heading text-lg font-semibold text-txt mb-4">Iterations</h4>
+							<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+								<figure class="bg-bg rounded-lg overflow-hidden border border-border">
+									<div class="show-large aspect-[16/10] bg-surface/5"><img src="../images/mobile-header@2x.webp"
+											data-missing-src="../images/mobile-header@2x.webp"
+											alt="Image pending: Iteration: simplified header after usability feedback"
+											class="w-full h-full object-cover" loading="lazy"></div>
+									<figcaption class="px-4 py-3 text-sm text-txt-muted font-body"><span class="transition-[outline]">v1 → v2: Reduced information density based on nurse feedback</span></figcaption>
+								</figure>
+								<figure class="bg-bg rounded-lg overflow-hidden border border-border">
+									<div class="show-large aspect-[16/10] bg-surface/5"><img src="../images/main-branding-update@2x.webp"
+											data-missing-src="../images/images-case-studies-rothman-mobile-iteration-02.png"
+											alt="Image pending: Alert badge redesign: from numeric to color+icon after testing"
+											class="w-full h-full object-cover" loading="lazy"></div>
+									<figcaption class="px-4 py-3 text-sm text-txt-muted font-body"><span
+											class="transition-[outline]">v2 → v3: Updated branding and visual hierarchy to match the new design system</span></figcaption>
+								</figure>
+							</div>
+						</div>
+					</section>
+					<section class="mb-14 gallery-section">
+						<h2 class="font-heading text-2xl font-bold text-txt mb-4">Final Design</h2>
+						<div class="section-divider mb-6"></div>
+						<div class="mb-10">
+							<h4 class="font-heading text-lg font-semibold text-txt mb-4">Key Screens</h4>
+							<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+								<figure class="bg-bg rounded-lg overflow-hidden border border-border">
+									<div class="aspect-[16/10] bg-surface/5"><img src="../images/ri-mobile-listing@2x.webp" data-missing-src="../images/ri-mobile-listing@2x.webp" alt="Image pending: Final: unit overview with real-time acuity scores" class="w-full h-full object-cover" loading="lazy"></div><figcaption class="px-4 py-3 text-sm text-txt-muted font-body"><span class="transition-[outline]">Final: unit overview with real-time acuity scores</span></figcaption>
+								</figure>
+								<figure class="bg-bg rounded-lg overflow-hidden border border-border">
+									<div class="aspect-[16/10] bg-surface/5"><img src="../images/ri-mobile-pdp-full@2x.webp" data-missing-src="../images/images-case-studies-rothman-mobile-screen-02.png" alt="Image pending: Final: patient detail with 72-hour trend" class="w-full h-fullobject-cover" loading="lazy"></div>
+									<figcaption class="px-4 py-3 text-sm text-txt-muted font-body"><span class="transition-[outline]">Final: patient detail with timeline trend, patient details, patient notes, and patient history</span></figcaption>
+								</figure>
+								<figure class="bg-bg rounded-lg overflow-hidden border border-border">
+									<div class="aspect-[16/10] bg-surface/5"><img src="../images/ri-mobile-interventions-notes@2x.webp" data-missing-src="../images/ri-mobile-interventions-notes@2x.webp" alt="Image pending: Final: alert notification with one-tap triage" class="w-full h-full object-cover" loading="lazy"></div><figcaption class="px-4 py-3 text-sm text-txt-muted font-body"><span class="transition-[outline]">Final: single tap triage, categorization and defined actionable recording in app</span></figcaption>
+								</figure>
+							</div>
+						</div>
+						<div class="bg-bg rounded-lg p-6 border border-border">
+							<h4 class="font-heading text-sm font-semibold text-txt mb-2 uppercase tracking-wider">Design System</h4>
+							<p class="text-txt-muted font-body text-sm transition-[outline]">Built on a shared design system with the desktop dashboard. Color tokens, typography scale, and component library maintained in AdobeXD with dev-ready specs I used to help engineering achieve perfect replication in code base.</p>
+						</div>
+					</section>
+					<section class="mb-14">
+						<h2 class="font-heading text-2xl font-bold text-txt mb-4">Collaboration</h2>
+						<div class="section-divider mb-6"></div>
+						<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+							<div class="bg-bg rounded-lg p-4 border border-border">
+								<p class="text-sm text-txt font-body transition-[outline]">Product Manager — prioritization, FDA submission coordination</p>
+							</div>
+							<div class="bg-bg rounded-lg p-4 border border-border">
+								<p class="text-sm text-txt font-body transition-[outline]">Clinical User Testing — validation of alert thresholds</p>
+							</div>
+							<div class="bg-bg rounded-lg p-4 border border-border">
+								<p class="text-sm text-txt font-body transition-[outline]">iOS &amp; Android engineers — feasibility reviews, handoff</p>
+							</div>
+							<div class="bg-bg rounded-lg p-4 border border-border">
+								<p class="text-sm text-txt font-body transition-[outline]">QA team — accessibility audit, device matrix testing</p>
+							</div>
+						</div>
+						<p class="text-txt-muted font-body text-sm transition-[outline]">Delivered annotated and developed AdobeXD specs with interaction notes, component documentation, and a prototype for FDA reviewer walkthroughs. Wireframe full workflows for FDA testing approval.</p>
+					</section>
+					<section class="mb-14">
+						<h2 class="font-heading text-2xl font-bold text-txt mb-4">Outcome</h2>
+						<div class="section-divider mb-6"></div>
+						<ul class="space-y-3 mb-6">
+							<li class="flex items-start gap-3 font-body"><svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5"
+									fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+								</svg><span class="text-txt transition-[outline]">FDA 508 clearance achieved on first submission</span></li>
+							<li class="flex items-start gap-3 font-body"><svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5"
+									fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+								</svg><span class="text-txt transition-[outline]">Adopted across 10+ hospital units	within 6 months of launch</span></li>
+							<li class="flex items-start gap-3 font-body"><svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5"
+									fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+								</svg><span class="text-txt transition-[outline]">Reduced average alert response time</span></li>
+							<li class="flex items-start gap-3 font-body"><svg class="w-5 h-5 text-primary flex-shrink-0 mt-0.5"
+									fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+								</svg><span class="text-txt transition-[outline]">WCAG 2.1 AA compliant across all screens</span></li>
+						</ul>
+						<blockquote class="border-l-4 border-primary pl-6 py-2 italic text-txt-muted font-body text-lg">
+							"<span class="transition-[outline]">The mobile app gave our nurses the situational awareness
+								they needed without adding to their cognitive burden.</span>"</blockquote>
+					</section>
+					<div class="border-t border-border pt-8 flex justify-between">
+                        <a class="btn-outline text-sm"
+							href="../work.html"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+								stroke-width="2">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path>
+							</svg>All Work</a><a class="btn-primary text-sm" href="../contact.html">Discuss a Project<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3">
+								</path>
+							</svg>
+                        </a>
+                    </div>
+				</div>
+			</article>
+		</main>
+		<footer class="bg-surface text-txt-inverse">
+			<!-- <div class="border-b border-border-dark">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+					<div class="flex flex-col md:flex-row items-center justify-between gap-6">
+						<h3 class="font-heading text-2xl md:text-3xl font-semibold text-center md:text-left transition-[outline]">
+							Have a project in mind? Let's talk.</h3><a class="btn-primary" href="../contact.html"><span
+								class="transition-[outline]">Get In Touch</span></a>
+					</div>
+				</div>
+			</div> -->
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div>
+						<div class="font-heading text-2xl font-bold mb-4">
+							<span>Brad</span>
+							<span class="text-primary">Earnhardt</span>
+						</div>
+						<p class="text-txt-inverse/60 font-body leading-relaxed transition-[outline]">UX Designer focused on building intuitive, scalable enterprise and product experiences.</p>
+					</div>
+					<div>
+						<h4 class="font-heading text-lg font-semibold mb-4">Quick Links</h4>
+						<ul class="space-y-2 font-body">
+							<li><a class="text-txt-inverse/60 hover:text-primary transition-colors" href="../index.html">Home</a></li>
+							<li><a class="text-txt-inverse/60 hover:text-primary transition-colors" href="../work.html">Work</a></li>
+							<li><a class="text-txt-inverse/60 hover:text-primary transition-colors" href="../process.html">Process</a>
+							</li>
+							<li><a class="text-txt-inverse/60 hover:text-primary transition-colors" href="../about.html">About</a>
+							</li>
+							<li><a class="text-txt-inverse/60 hover:text-primary transition-colors" href="../contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h4 class="font-heading text-lg font-semibold mb-4">Get In Touch</h4>
+						<ul class="space-y-2 font-body">
+							<li><a href="mailto:uxbrad@bdesigns.net" class="text-txt-inverse/60 hover:text-primary transition-colors">
+                                    <span class="transition-[outline]">uxbrad@bdesigns.net</span></a></li>
+                            <li><a href="tel:704-323-6921" class="text-txt-inverse/60 hover:text-primary transition-colors">
+                                <span class="transition-[outline]">704-323-6921</span></a></li>
+							<li class="text-txt-inverse/60"><span class="transition-[outline]">Charlotte, NC</span></li>
+						</ul>
+						<div class="flex gap-3 mt-4">
+							<a href="https://www.linkedin.com/in/bradearnhardt/" target="_blank" rel="noopener noreferrer"
+								class="w-10 h-10 flex items-center justify-center rounded-full border border-border-dark text-txt-inverse/60 hover:bg-primary hover:border-primary hover:text-txt-inverse transition-all"
+								aria-label="LinkedIn">
+								<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+									<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+									</path>
+								</svg>
+							</a>
+							<!-- <a href="mailto:uxbrad@bdesigns.net" target="_blank" rel="noopener noreferrer"
+								class="w-10 h-10 flex items-center justify-center rounded-full border border-border-dark text-txt-inverse/60 hover:bg-primary hover:border-primary hover:text-txt-inverse transition-all"
+								aria-label="Email">
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round"
+										d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+									</path>
+								</svg>
+							</a> -->
+						</div>
+					</div>
+				</div>
+				<div class="mt-12 pt-8 border-t border-border-dark text-center">
+					<p class="text-txt-inverse/40 text-sm font-body">&copy; 2026 Brad Earnhardt. All rights reserved.
+					</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="mt-12 pt-8 border-t border-border-dark text-center">
+		<p class="text-txt-inverse/40 text-sm font-body">&copy; 2026 Brad Earnhardt. All rights reserved.
+		</p>
+	</div>
+	</div>
+	</footer>
+	</div>
+
+
+	<script src="../assets/main.js?v=20260912" defer=""></script>
+	<button id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode" style="position:fixed;bottom:1.5rem;right:1.5rem;z-index:50;width:40px;height:40px;border-radius:9999px;border:1px solid rgb(var(--color-border));background:rgb(var(--color-bg-alt));color:rgb(var(--color-text));display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 6px -1px rgba(0,0,0,.1);transition:all .2s">
+		<svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+			<circle cx="12" cy="12" r="5"></circle>
+			<path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42">
+			</path>
+		</svg>
+		<svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" style="display:none">
+			<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+		</svg>
+	</button>
+</body>
+
+</html>
