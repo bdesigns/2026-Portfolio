@@ -8,7 +8,20 @@
   const previous = document.getElementById('previous');
   const next = document.getElementById('next');
   const counter = document.getElementById('counter');
+  const mobileLayout = window.matchMedia('(max-width: 600px) and (orientation: portrait)');
   let current = 0;
+  let wasMobile = mobileLayout.matches;
+
+  function isMobileLayout() {
+    return mobileLayout.matches;
+  }
+
+  function scrollCurrentSlideToTop() {
+    if (!isMobileLayout()) return;
+    window.requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    });
+  }
 
   function indexFromHash() {
     const match = location.hash.match(/^#slide-(\d+)$/);
@@ -29,15 +42,30 @@
       try { history.replaceState(null, '', `#slide-${current + 1}`); }
       catch { location.hash = `slide-${current + 1}`; }
     }
+    scrollCurrentSlideToTop();
   }
 
   function fitSlides() {
+    const mobile = isMobileLayout();
+    document.documentElement.classList.toggle('mobile-layout', mobile);
+
+    if (mobile) {
+      stage.style.removeProperty('width');
+      stage.style.removeProperty('height');
+      deck.style.removeProperty('transform');
+      if (!wasMobile) scrollCurrentSlideToTop();
+      wasMobile = true;
+      return;
+    }
+
     const padding = window.innerWidth <= 800 ? 20 : 48;
     const availableHeight = Math.max(160, window.innerHeight - 100);
     const scale = Math.min((window.innerWidth - padding) / 1200, availableHeight / 675, 1600 / 1200);
     stage.style.width = `${1200 * scale}px`;
     stage.style.height = `${675 * scale}px`;
     deck.style.transform = `scale(${scale})`;
+    if (wasMobile) window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    wasMobile = false;
   }
 
   previous.addEventListener('click', () => showSlide(current - 1));
@@ -66,6 +94,7 @@
   stage.addEventListener('touchcancel', () => { touchStart = null; }, { passive: true });
   window.addEventListener('hashchange', () => showSlide(indexFromHash(), false));
   window.addEventListener('resize', fitSlides);
+  mobileLayout.addEventListener?.('change', fitSlides);
   showSlide(indexFromHash(), false);
   fitSlides();
 })();
