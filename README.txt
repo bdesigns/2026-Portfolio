@@ -1,4 +1,4 @@
-Brad Earnhardt — Portfolio Export
+BE — Portfolio
 ========================================
 
 Static HTML + CSS + JS
@@ -14,8 +14,6 @@ File structure:
   assets/styles.css       — All styles
   assets/main.js          — Dark/light toggle, header scroll, mobile menu
   images/                 — All bundled images
-  edits.json              — Text overrides (if any)
-  theme.json              — Color & mode customizations (if any)
 
-The dark/light toggle button is in the bottom-right corner.
-Color customizations are baked into inline <style> blocks.
+
+uploaded @ 2026
