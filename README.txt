@@ -19,7 +19,3 @@ File structure:
 
 The dark/light toggle button is in the bottom-right corner.
 Color customizations are baked into inline <style> blocks.
-
-To host: upload all files to any static web host.
-
-Exported: 2026-05-14T21:35:50.670Z
